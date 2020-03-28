@@ -1,9 +1,12 @@
-.product-list{
+/* Estilização da exibição dos produtos, os cards das teccnologias */
+
+.product-list{ /* Card conteiner */
     max-width: 700px;
     margin: 20px auto 0;
 
     padding: 0 20px;
 }
+/* Card em sí a div que contém as informações */
 .product-list article {
 
     padding: 20px;
@@ -13,10 +16,61 @@
     border: 1px solid #DDD;
     border-radius: 5px;
 }
-
+/* Card description  */
 .product-list p {
     font-size: 16px;
     color: #999;
     margin-top: 5px;
     line-height: 24px;
+}
+/* Card link para os repositórios */
+.product-list article a {
+    height: 42px;
+
+    margin-top: 10px;
+
+    border: 2px solid #da552f;
+    border-radius: 5px;
+    background: none;
+    color: #da552f;
+
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+.product-list article a:hover{
+
+    background-color: #da552f;
+    color: #fff;
+
+}
+/* botoẽs de paginação para navegação na página */
+.product-list .actions {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.product-list .actions button {
+    padding: 10px;
+
+    border-radius: 5px;
+    border: none;
+
+    background-color: #da552f;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+.product-list .actions button:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
