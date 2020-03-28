@@ -74,3 +74,11 @@
     cursor: pointer;
     opacity: 0.7;
 }
+
+.product-list .actions button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+.product-list .actions button[disabled]:hover{
+    opacity: 0.5;
+}
