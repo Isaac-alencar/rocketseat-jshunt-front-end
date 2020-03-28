@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import api from '../../services/api';
 
 import './styles.css';
@@ -8,7 +10,7 @@ export default class Main extends Component {
 
     state = {
         products: [],
-        productInfo: {}, 
+        productInfo: {},
         page: 1
     };
 
@@ -25,7 +27,7 @@ export default class Main extends Component {
     };
 
     prevPage = () => {
-        const { page, productInfo } = this.state
+        const { page } = this.state
 
         if(page === 1) return;
 
@@ -47,7 +49,7 @@ export default class Main extends Component {
 
     render() {
 
-        const { products } = this.state;
+        const { products, page, productInfo } = this.state;
 
         return (
             <div className="product-list">
@@ -57,13 +59,13 @@ export default class Main extends Component {
                             <strong>{product.title}</strong>
                             <p>{product.description}</p>
 
-                            <a href="">Acessar</a>
+                            <Link to={`/products/${product._id}`}>Acessar</Link>
                         </article>
                     )
                 })}
                 <div className="actions">
-                    <button onClick={this.prevPage}>Anterior</button>
-                    <button onClick={this.nextPage}>Próximo</button>
+                    <button disabled={page=== 1} onClick={this.prevPage}>Anterior</button>
+                    <button disabled={page=== productInfo.pages} onClick={this.nextPage}>Próximo</button>
                 </div>
             </div>
         )
