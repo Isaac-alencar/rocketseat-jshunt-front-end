@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 
+import './styles.css';
+
 
 export default class Main extends Component {
 
@@ -19,6 +21,22 @@ export default class Main extends Component {
     };
 
     render() {
-        return <h1>Hello Rocketseat</h1>;
+
+        const { products } = this.state;
+
+        return (
+            <div className="product-list">
+                {products.map(product => {
+                    return (
+                        <article key={product._id}>
+                            <strong>{product.title}</strong>
+                            <p>{product.description}</p>
+
+                            <a href="">Acessar</a>
+                        </article>
+                    )
+                })}
+            </div>
+        )
     }
 }
