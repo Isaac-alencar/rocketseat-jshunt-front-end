@@ -2,9 +2,9 @@
 
 [![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/300px-React-icon.svg.png)](https://nodesource.com/products/nsolid)
 
- ###  Huntweb é o projeto desenvolvido no curso de iniciação React.js
+ ###  JSHunt é o projeto desenvolvido no curso de iniciação React.js
  
-O projeto hunt, desencolvido em react no curso da Rocketseat. Tem com objetivo inicializar os conhcimentos aprendidos no curso de forma prática, criando uma aplicação front-end com consulta em api(Também desenvolvida com a plataforma) e utilização dos principais conceitos base do React.js
+O projeto JShunt, desencolvido em react no curso da Rocketseat. Tem com objetivo inicializar os conhcimentos aprendidos no curso de forma prática, criando uma aplicação front-end com consulta em api(Também desenvolvida com a plataforma) e utilização dos principais conceitos base do React.js
 
 
 
