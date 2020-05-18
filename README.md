@@ -1,4 +1,4 @@
-# Huntweb
+# JSHunt
 
 [![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/300px-React-icon.svg.png)](https://nodesource.com/products/nsolid)
 
